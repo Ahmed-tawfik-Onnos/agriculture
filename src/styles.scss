@@ -1,0 +1,28 @@
+$commonColor:rgb(237,106,19);
+$secondCommonColor:rgb(51,153,0);
+$backGroundColor:rgb(218,218,218);
+$footerTextColor:rgb(153,153,153);
+$copyRightsBackground:#111;
+*{
+    font-family: century gothic,Futura Lt BT, century gothic,Verdana, Tahoma, Avenir, AvantGarde Bk BT, Arial;
+}
+body {
+    font-size: 16px;
+    line-height: 0 .8;
+    color: #333;
+    background-color: #fff;
+}
+.centered-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+button{
+    background-color: $commonColor;
+    color: white;
+    padding: 5px 50px;
+}

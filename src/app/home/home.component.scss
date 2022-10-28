@@ -1,0 +1,35 @@
+@import "../../styles.scss";
+// company section styles
+.CompanyContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1%;
+    h1{
+        color:$secondCommonColor;
+        margin-bottom: 3%;
+    }
+    h2{
+        color:$commonColor;
+    }
+}
+// global markets section styles
+.globalContainer{
+    padding: 4% 8%;
+    background-color: $backGroundColor;
+    .wrapper{
+        padding: 3% 1%;
+        background-color: white;
+    }
+    .globalText{
+        padding: 1%;
+    }
+}
+// picture links section styles
+.picsContainer{
+    padding: 3% 9%;
+    h4{
+        color: $secondCommonColor;
+    }
+}

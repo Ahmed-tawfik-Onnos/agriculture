@@ -1,0 +1,27 @@
+@import "../../styles.scss";
+
+$footerBackGround:rgb(30,30,30);
+
+.footerContainer{
+    background-color: $footerBackGround;
+    padding: 3% 7%;
+    ul{
+        list-style-type: none;
+        a{
+            text-decoration: none;
+            color: $footerTextColor;
+        }
+    }
+    .terms{
+        a{
+            text-decoration: none;
+            color: $secondCommonColor;
+        }
+    }
+}
+.copyRight{
+    background-color: $copyRightsBackground;
+    color: #CCC;
+    padding: 15px 0;
+    font-size: 15px;
+}

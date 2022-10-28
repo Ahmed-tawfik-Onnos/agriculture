@@ -1,0 +1,27 @@
+@import "../../styles.scss";
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $commonColor;
+    .logoContainer{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        .logo{
+            width: 15%;
+            height: auto;
+        }
+    }
+    .navbar-collapse{
+        display: flex;
+        justify-content: center;
+        .nav-item{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+    }
+}
+
