@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg px-2" >
+    <h2 class="mx-2">Trendings</h2>
+    <button id="navbar-btn" class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link rounded" routerLink="home" routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded" routerLink="movies" routerLinkActive="active">Movies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded" routerLink="tvShows" routerLinkActive="active">Tv Shows</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded" routerLink="people" routerLinkActive="active">People</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded" routerLink="about" routerLinkActive="active">About</a>
+            </li>
+        </ul>
+        <div class="navbar-nav ms-auto">
+            <form class="navbar-nav">
+                <input class="form-control me-sm-2" type="text" placeholder="Search">      
+             </form>
+             <div class="navbar-nav my-auto mx-4">
+                <i class="fa-brands fa-facebook nav-item"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>                
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <ul class="navbar-nav">
+                <li *ngIf="!showMenuItem()" class="nav-item">
+                    <a class="nav-link rounded" routerLinkActive="active" routerLink="login">Login</a>
+                </li>
+                <li *ngIf="!showMenuItem()" class="nav-item">
+                    <a class="nav-link rounded" routerLinkActive="active" routerLink="register">Register</a>
+                </li>
+                <li *ngIf="showMenuItem()" class="nav-item">
+                    <a class="btn logout" (click)="logOut()">Logout</a>
+                </li>
+            </ul>
+        </div> 
+    </div>
+</nav>

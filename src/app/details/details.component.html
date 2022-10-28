@@ -1,0 +1,15 @@
+    <div class="row">
+        <div class="col-4">
+            <img src="{{imaSrc}}" alt="" class="w-100">
+        </div>
+        <div class="col-8">
+            <h1>{{name}}{{title}}</h1>
+            <p>{{tagLine}}</p>
+            <button *ngFor="let g of genres" class="btn btn-info">{{g.name}}</button><br>
+            <p class="span">Vote Average: {{voteAvg}}</p>
+            <p class="span">Vote Count: {{voteCount}}</p>
+            <p class="span">Popularity: {{popularity}}</p>
+            <p class="span">Release Date: {{releaseDate}}</p>
+            <p>{{overview}}</p>
+        </div>
+    </div>

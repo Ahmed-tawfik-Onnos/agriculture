@@ -1,0 +1,29 @@
+    <h1 class="my-3">Registeration Form</h1>
+    <form class="mx-5" [formGroup]='registerForm' (ngSubmit)="register()">
+        <div class="form-group">
+            <label for="firstName">Fisrt Name:</label>
+            <input [class.is-invalid]="firstNameInvalid" type="text" formControlName="first_name" name="firstName" class="form-control">
+            <span *ngIf="firstNameInvalid" class="alert text-danger">First Name is Invalid, 3-15 characters</span>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input [class.is-invalid]="lastNameInvalid" type="text" formControlName="last_name" name="lastName" class="form-control">
+            <span *ngIf="lastNameInvalid" class="alert text-danger ">Last Name is Invalid, 3-15 characters</span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input [class.is-invalid]="emailInvalid" type="email" formControlName="email" name="email" class="form-control">
+            <span *ngIf="emailInvalid" class="alert text-danger ">Email is Invalid, Example: any@any</span>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input [class.is-invalid]="passwordInvalid" type="text" formControlName="password" name="password" class="form-control">
+            <span *ngIf="passwordInvalid" class="alert text-danger ">password is Invalid, (small character followed by 3 or more numbers)</span>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit" [disabled]="FormInvalid">Submit</button>
+        <p>
+            Do You Have an Account ?
+            <a routerLink="/login">Log in</a>
+            Now.
+        </p>
+    </form>

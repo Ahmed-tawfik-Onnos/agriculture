@@ -1,0 +1,36 @@
+
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-6 my-3">
+            <div class="brbr w-25"></div>
+            <h3 class="mt-3 typed-element"></h3>
+            <p class="span">Most Watched Movies By Days</p>
+            <div class="brbr w-75"></div>
+        </div>
+        <div *ngFor="let movie of movies" class="col-lg-2 col-md-4 col-6 trendItem">
+            <div class="img-container">
+                <img class="w-100" src="https://image.tmdb.org/t/p/original{{movie.poster_path}}" alt="">
+                <div id="hoverTab">
+                    <button routerLink="/details/{{movie.media_type}}/{{movie.id}}">See Details</button>
+                </div>
+            </div>
+            <p>{{movie.title}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-6 my-3">
+            <div class="brbr w-25"></div>
+            <h3 class="mt-3">Trinding <br> Tv Shows <br> To Watch Now</h3>
+            <p class="span">Most Watched Tv Shows By Days</p>
+            <div class="brbr w-75"></div>
+        </div>
+        <div *ngFor="let tv of tvShows" class="col-lg-2 col-md-4 col-6 trendItem">
+            <div class="img-container">
+                <img class="w-100" src="https://image.tmdb.org/t/p/original{{tv.poster_path}}" alt="">
+                <div id="hoverTab">
+                    <button routerLink="/details/{{tv.media_type}}/{{tv.id}}">See Details</button>
+                </div>
+            </div>
+            <p>{{tv.name}}</p>
+        </div>
+    </div>
+    <hr>

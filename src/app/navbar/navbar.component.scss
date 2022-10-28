@@ -1,0 +1,19 @@
+@import "../../styles.scss";
+
+.navbar{
+    background-color: $lightBgColor !important;
+    
+    .nav-link,.logout{
+        color: $fontColor;
+    }
+    .active{
+        background-color: gray;
+    }
+    i{
+        margin: 10px;
+    }
+    #navbar-btn{
+        background-color: gray;
+        padding: 10px 3vw;
+    }
+}
