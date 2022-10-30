@@ -1,49 +1,75 @@
-<nav class="navbar navbar-expand-lg">
-    <div class="logoContainer">
-        <a class="navbar-brand" href="#">
-            <img class="logo img-fluid"
+<!-- logo -->
+<div class="logoContainer col-sm-12">
+    <div class="logo">
+        <a href="#">
+            <img class="img-fluid"
              src="../../assets/313081102_1169555656977343_1901141798846812970_n.jpg"
              alt=""
             >
         </a>
     </div>
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-        aria-expanded="false" aria-label="Toggle navigation"></button>
-    <div  class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mt-2 mt-lg-0">
-            <div id="Profile-dropdown">
-                <li class="nav-item">
-                    <a class="nav-link">
-                       Profile
-                    </a>
-                </li>
-                
-            </div>
-            <li class="nav-item dropdown" id="Facilities-dropdown">
-                <a class="nav-link dropdown-toggle"
-                  href="#" id="dropdownId" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false"
-                >
-                  Facilities
+</div>    
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <a href="#">
+            <i class="icon fa-solid fa-house"></i>
+        </a>
+        <ul class="navbar-nav nav-ul">
+            <li class="nav-item dropdown" id="profile-dropdown">
+                <a class="nav-link">
+                    Profile
                 </a>
+                <div class="dropdown-container" id="profile-dropdown-container">
+                    profile-dropdown-container
+                </div>
             </li>
-            <li class="nav-item dropdown" id="Products-dropdown">
-                <a class="nav-link dropdown-toggle"
-                  href="#" id="dropdownId" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false"
-               >
-                    Products
-               </a>
+            <li class="nav-item dropdown" id="faclities-dropdown">
+                <a class="nav-link">
+                    Faclities
+                </a>
+                <div class="dropdown-container" id="faclities-dropdown-container">
+                    faclities-dropdown-container
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link">Food Safety</a>
+            <li class="nav-item dropdown" id="products-dropdown" >
+                <a class="nav-link">
+                   Products
+                </a>
+                <div class="dropdown-container" id="products-dropdown-container">
+                    products-dropdown-container
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link">Organic</a>
+            <li class="nav-item dropdown" id="Food-dropdown">
+                <a class="nav-link">
+                    Food Safety
+                </a>
+                <div class="dropdown-container" id="Food-dropdown-container">
+                    Food-dropdown-container
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link">Contact Us</a>
+            <li class="nav-item dropdown" id="Organic-dropdown">
+                 <a class="nav-link">
+                    Organic
+                </a>
+                <div class="dropdown-container" id="Organic-dropdown-container">
+                    Organic-dropdown-container
+                </div>
             </li>
-        </ul>
+                <li class="nav-item dropdown" id="Contact-dropdown">
+                   <a class="nav-link">
+                    Contact Us
+                </a>
+                <div class="dropdown-container" id="Contact-dropdown-container">
+                    Contact-dropdown-container
+                </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
+
