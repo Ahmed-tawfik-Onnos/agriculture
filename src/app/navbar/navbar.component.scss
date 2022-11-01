@@ -3,9 +3,9 @@
 .navbar{
     z-index: 999;
     background-color: $navbarLightColor;
-    box-shadow: 1px 1px 5px 1px lightblue;
+    box-shadow: 1px 1px 10px 1px $commonColor;
     #logo{
-        width: 9vw;
+        width: 125px;
     }
     .nav-item {
         color: $navbarFontColor;
