@@ -1,45 +1,21 @@
 @import "../../styles.scss";
 
-.logoContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .logo{
-        width: 200px;
-    }
-}
 .navbar{
-    
-    border-bottom: 1px solid $commonColor;
+    z-index: 999;
+    background-color: $navbarLightColor;
+    box-shadow: 1px 1px 5px 1px lightblue;
+    #logo{
+        width: 9vw;
+    }
+    .nav-item {
+        color: $navbarFontColor;
+        .nav-link{
+          color: $navbarFontColor;
+      
+        }
+    }
     #collapsibleNavbar{
         justify-content: center;
         align-items: center;
-        .icon{
-            margin: 0 10px;
-            color:$commonColor;
-            
-        }
-        .dropdown{
-            position: relative;
-            display: inline-block;
-            .dropdown-container{
-                position: fixed;
-                display: none;
-                
-                background-color: #f9f9f9;
-                padding: 12px 16px;
-                width: 100vw;
-                left: 0;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-        }
-        // .dropdown{
-        //     :hover:not(.dropdown-container){
-        //         border-bottom: 5px solid $commonColor;
-        //         border-radius: 10%;
-        //     }
-        // }
     }
-    
 }

@@ -1,75 +1,44 @@
-<!-- logo -->
-<div class="logoContainer col-sm-12">
-    <div class="logo">
-        <a href="#">
-            <img class="img-fluid"
-             src="../../assets/313081102_1169555656977343_1901141798846812970_n.jpg"
-             alt=""
-            >
-        </a>
-    </div>
-</div>    
-<!-- navbar -->
+
 <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand container-fluid">
+      <div id="logo">
+        <a class="navbar-brand" routerLinkActive="active" routerLink="home">
+            <img class="img-fluid" src="../../assets/logo.jpg" height="45" width="130" />
+          </a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <a href="#">
-            <i class="icon fa-solid fa-house"></i>
-        </a>
-        <ul class="navbar-nav nav-ul">
-            <li class="nav-item dropdown" id="profile-dropdown">
-                <a class="nav-link">
-                    Profile
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="home">
+                    <i class="fa-solid fa-home"></i>
                 </a>
-                <div class="dropdown-container" id="profile-dropdown-container">
-                    profile-dropdown-container
-                </div>
             </li>
-            <li class="nav-item dropdown" id="faclities-dropdown">
-                <a class="nav-link">
-                    Faclities
-                </a>
-                <div class="dropdown-container" id="faclities-dropdown-container">
-                    faclities-dropdown-container
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="products">Products</a>
             </li>
-            <li class="nav-item dropdown" id="products-dropdown" >
-                <a class="nav-link">
-                   Products
-                </a>
-                <div class="dropdown-container" id="products-dropdown-container">
-                    products-dropdown-container
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="about">About</a>
             </li>
-            <li class="nav-item dropdown" id="Food-dropdown">
-                <a class="nav-link">
-                    Food Safety
-                </a>
-                <div class="dropdown-container" id="Food-dropdown-container">
-                    Food-dropdown-container
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="contactUs">Contact Us</a>
             </li>
-            <li class="nav-item dropdown" id="Organic-dropdown">
-                 <a class="nav-link">
-                    Organic
-                </a>
-                <div class="dropdown-container" id="Organic-dropdown-container">
-                    Organic-dropdown-container
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="blogs">Blogs</a>
             </li>
-                <li class="nav-item dropdown" id="Contact-dropdown">
-                   <a class="nav-link">
-                    Contact Us
+            <li class="nav-item">
+                <a
+                  class="nav-link"
+                  routerLinkActive="active"
+                  routerLink="Certifications">
+                  Certifications
                 </a>
-                <div class="dropdown-container" id="Contact-dropdown-container">
-                    Contact-dropdown-container
-                </div>
-                </li>
-            </ul>
-        </div>
+            </li>
+        </ul>
+      </div>
     </div>
 </nav>
 
+ 

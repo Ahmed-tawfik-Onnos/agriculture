@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     $(document).ready(function(){
-      $(".companyText").fadeIn(500).fadeOut(250).fadeIn(2000);
+      $(".companyText").fadeIn(2000)
     });
     
   }
